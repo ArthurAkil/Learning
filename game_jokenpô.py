@@ -1,5 +1,6 @@
 def jokenpo():
     from random import randint
+    from time import sleep
 
     lista = ['Pedra', 'Papel', 'Tesoura']
     numero_pc = randint(0, 2)
@@ -21,6 +22,11 @@ def jokenpo():
         elif numero_usuario > 3:
             continue
         escolha_usario = lista[numero_usuario]
+        print('JO')
+        sleep(1)
+        print('KEN')
+        sleep(1)
+        print('PO!!!')
         if numero_usuario == 0:
             print(f'Você escolheu {(lista[numero_usuario]).upper()}', end='')
             if numero_pc == 0:
