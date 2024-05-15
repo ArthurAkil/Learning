@@ -18,6 +18,8 @@ def jokenpo():
         numero_usuario = int(input())
         if numero_usuario == 3:
             return f'Durante o seu tempo de jogo você conseguiu {empates} empates, {vitorias} vitorias, {derrotas} derrotas.'
+        elif numero_usuario > 3:
+            continue
         escolha_usario = lista[numero_usuario]
         if numero_usuario == 0:
             print(f'Você escolheu {(lista[numero_usuario]).upper()}', end='')
